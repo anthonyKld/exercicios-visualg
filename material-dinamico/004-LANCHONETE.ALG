@@ -18,6 +18,7 @@ Inicio
 
    enquanto ((resp = "S") ou (resp = "s")) faca
       escreval("")
+      escreval("--------------------------------------")
       escreval("              CARDÁPIO                ")
       escreval("--------------------------------------")
       escreval("|Código | Produto         | Preço    |")
