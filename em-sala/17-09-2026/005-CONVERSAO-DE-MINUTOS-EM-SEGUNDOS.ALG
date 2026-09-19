@@ -2,7 +2,7 @@ Algoritmo "005-conversao-de-minutos-em-segundos"
 // Disciplina  : Linguagem e Lógica de Programação
 // Professor   : Rodrigo 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
+// Autor(a)    : Anthony Kildery
 // Data atual  : 17/09/2026
 Var
 min, seg: inteiro
