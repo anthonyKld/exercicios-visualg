@@ -37,7 +37,7 @@ Inicio
       se i = 0 entao
          escreva("Salário(os) acima da média: ")
       fimse
-      se salarios[i] >= mediaSalarios entao
+      se salarios[i] > mediaSalarios entao
          escreva(" ", salarios[i]:2:2)
          existe <- 2
       senao
