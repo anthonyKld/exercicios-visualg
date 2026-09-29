@@ -6,6 +6,9 @@ Algoritmo "026-soma-de-uma-linha-e-uma-coluna-especificas"
 // Data atual  : 29/09/2026
 Var
 A: vetor[1..7, 1..6] de inteiro
+lin5, col3: vetor[1..7] de inteiro
+somaLin5, somaCol3: inteiro
+i, ii: inteiro
 
 Inicio
 A[1,1] <- 10
@@ -56,5 +59,39 @@ A[7,3] <- 390
 A[7,4] <- 400
 A[7,5] <- 410
 A[7,6] <- 420
+
+para i de 1 ate 7 faca
+     escreval("")
+     para ii de 1 ate 6 faca
+          escreva(A[i, ii]:5:0)
+          se i = 5 entao
+             lin5[ii] <- A[i, ii]
+          fimse
+          se ii = 3 entao
+             col3[i] <- A[i, ii]
+          fimse
+     fimpara
+fimpara
+
+escreval("")
+escreval("")
+escreva("Linha  5: ")
+para i de 1 ate 6 faca
+     escreva(lin5[i]:5:0)
+     somaLin5 <- somaLin5 + lin5[i]
+fimpara
+escreva("      =", somaLin5)
+
+escreval("")
+escreva("Coluna 3: ")
+para i de 1 ate 7 faca
+     escreva(col3[i]:5:0)
+     somaCol3 <- somaCol3 + col3[i]
+fimpara
+escreva(" =", somaCol3)
+
+escreval("")
+escreval("")
+escreva("Total:    " ,somaLin5, " +" ,somaCol3, " =", somaLin5 + somaCol3)
 
 Fimalgoritmo
