@@ -5,7 +5,7 @@ Algoritmo "029-produto-matricial"
 // Autor(a)    : Anthony Kildery
 // Data atual  : 02/10/2026
 Var
-i, ii, iii: inteiro
+i, ii, iii, iv, Aval, Bval, somaProd: inteiro
 linC, colC: vetor[1..6] de inteiro
 A: vetor[1..4, 1..6] de inteiro
 B: vetor[1..6, 1..4] de inteiro
@@ -101,18 +101,25 @@ fimpara
 escreval("")
 escreval("")
 escreval("--------MATRIZ DE [A X B = C]--------")
-para i de 1 ate 6 faca
-     para ii de 1 ate 4 faca
-        se i = 1 entao
-           escreval("")
-        fimse
-        para iii de 1 ate 6 faca
-             // linC[i] <- A[ii, iii]
-             linC[i] <- A[ii, iii] * B[iii, ii]
-             se i = 1 entao
-                escreva(linC[i]:6:0)
-             fimse
+
+para i de 1 ate 4 faca
+     //escreval("")
+     para ii de 1 ate 1 faca
+        //escreva("[", Aval, " ]")
+        //escreval("")
+        para iii de 1 ate 4 faca
+             escreval("")
+             para iv de 1 ate 6 faca
+                  Aval <- A[i, iv]
+                  Bval <- B[iv, iii]
+                  //escreva("[", Bval, " ]")
+                  somaProd <- (Aval * Bval) + somaProd
+                  C[i, iii] <- somaProd
+                  //escreva("[", Aval, " x", Bval, " ]")
+                  escreva(C[i, iii]:7:0)
+             fimpara
         fimpara
+        
      fimpara
 fimpara
 
