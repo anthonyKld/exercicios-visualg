@@ -100,7 +100,7 @@ Inicio
 
    escreval("")
    escreval("")
-   escreval("--------MATRIZ DE [A X B = C]--------")
+   escreval("--------MATRIZ DE [ C = (A X B) + C ]--------")
    {
       i, ii formam a matriz 4x4
       ii, iii pega a linha e coluna de A e B
