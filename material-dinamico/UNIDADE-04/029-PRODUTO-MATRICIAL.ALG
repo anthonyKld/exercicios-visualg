@@ -124,3 +124,6 @@ para i de 1 ate 4 faca
 fimpara
 
 Fimalgoritmo
+
+// Guarda todas as multiplicações
+// Depois somar todas elas
