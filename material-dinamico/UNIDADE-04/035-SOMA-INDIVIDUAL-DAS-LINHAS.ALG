@@ -6,12 +6,13 @@ Algoritmo "035-soma-individual-das-linhas"
 // Data atual  : 09/10/2026
 Var
    A: vetor[1..12, 1..12] de inteiro
-   i, ii, valor, somaPares: inteiro
+   somas: vetor[1..12] de inteiro
+   i, ii, valor, somaPares, soma: inteiro
 
 Inicio
    valor <- 1
 
-   escreval("------------MATRIZ B 9X9------------")
+   escreval("-----------------------MATRIZ A 12X12-----------------------")
    para i de 1 ate 12 faca
       escreval("")
 
@@ -22,6 +23,22 @@ Inicio
          valor <- valor + 1
 
       fimpara
+   fimpara
+   
+   escreval("")
+   escreval("")
+   escreval("--------------SOMA DAS LINAS DA MATRIZ A 12X12--------------")
+   escreval("")
+   para i de 1 ate 12 faca
+      soma <- 0
+      
+      para ii de 1 ate 12 faca
+           soma <- soma + A[i, ii]
+      fimpara
+      
+      somas[i] <- soma
+      escreval("Linha " ,i:2:0, ": " ,somas[i])
+      
    fimpara
 
 
