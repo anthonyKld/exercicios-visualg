@@ -46,7 +46,7 @@ Inicio
    fimpara
    
    escreval("")
-   escreval("Soma: ", soma)
-   escreval("Media: ", soma/cont)
+   escreval("Soma: ", soma:7:0)
+   escreval("Media: ", soma/cont:5:0)
    
 Fimalgoritmo
