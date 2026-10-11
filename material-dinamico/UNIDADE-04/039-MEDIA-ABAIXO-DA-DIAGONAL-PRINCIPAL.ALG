@@ -47,6 +47,6 @@ Inicio
    
    escreval("")
    escreval("Soma: ", soma)
-   escreval("Quantidade de elementos: ", cont)
+   escreval("Media: ", soma/cont)
    
 Fimalgoritmo
